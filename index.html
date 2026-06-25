@@ -4,37 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
+    <title>Gerador de Senhas da Lola</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section class="conteudo">
         <div class="conteudo-titulo">
-            <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
-            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+            <h2 class="titulo-principal">Gerador de Senhas da Lola 🔐</h2>
+            <h3 class="titulo-secundario">
+                Gere uma senha forte com a aprovação oficial da Lola.
+            </h3>
         </div>
+
         <div class="conteudo-senha">
             <label for="campo-senha">Senha</label>
-            <input id="campo-senha" type="text">
+            <input name="senha" type="text" id="campo-senha" readonly>
         </div>
+
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
+
             <div class="parametro-coluna__senha">
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
-                </div>                
+
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Características da senha</h4>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="maiusculo" name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="minusculo" name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="numero" name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="simbolo" name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
                 </div>
+
                 <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <h4 class="parametro-senha__titulo">Aprovação da Lola</h4>
+
+                    <div class="aprovacao-lola">
+                        <div class="forca-conteudo">
+                            <div class="barra"></div>
+                            <div class="forca fraca"></div>
+
+                            <div class="parametro-senha-textos">
+                                <p>Paia 🐾</p>
+                                <p>Boa 🐾</p>
+                                <p>Excelente 🦴</p>
+                            </div>
+
+                            <p class="entropia"></p>
+                        </div>
+
+                        <img id="lola" src="lola_triste.png" alt="Lola">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <strong>Gerador de Senhas da Lola 🔐</strong>
+            </p>
+
+            <p>
+                Aprovado pela inspetora oficial Lola 🐶
+            </p>
+
+            <p>
+                Pietro Augusto Pillatto Gai n°34 3°E
+            </p>
+
+            <div class="footer-links">
+                <a href="https://github.com/hokage0985/seguran-a-digital">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
